@@ -1,0 +1,32 @@
+---
+label: block-go-head
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: block-go-head
+- type: text
+  label: Go Head Title
+  name: go-head-title
+- type: text
+  label: Go Head Sub Title
+  name: go-head-sub-title
+- type: field_group_list
+  name: go-head-list
+  label: Go Head List
+  fields:
+  - type: field_group_list
+    name: img-group
+    label: Img Group
+    fields:
+    - type: file
+      name: img
+      label: Image
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: text
+    label: Text

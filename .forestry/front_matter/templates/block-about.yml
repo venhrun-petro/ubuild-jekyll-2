@@ -1,0 +1,21 @@
+---
+label: block-about
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: block-about
+- type: text
+  label: About Title
+  name: about-title
+- type: text
+  label: About Paragraph
+  name: about-paragraph
+- type: text
+  label: Buton Text
+  name: about-btn-text
+- type: text
+  label: Buton Url
+  name: about-btn-url

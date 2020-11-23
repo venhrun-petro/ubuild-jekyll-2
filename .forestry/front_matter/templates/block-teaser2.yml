@@ -1,0 +1,12 @@
+---
+label: block-teaser2
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: block-teaser2
+- type: text
+  label: Title
+  name: teaser-2-title

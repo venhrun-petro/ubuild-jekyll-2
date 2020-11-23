@@ -1,0 +1,24 @@
+---
+label: block-teaser
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: block-teaser
+- type: text
+  label: Title
+  name: teaser-title
+- type: text
+  label: Paragraph
+  name: teaser-paragraph
+- type: text
+  label: Buton Text
+  name: teaser-button-text
+- type: text
+  label: Buton Url
+  name: teaser-button-url
+- type: file
+  label: BG image
+  name: teaser-img

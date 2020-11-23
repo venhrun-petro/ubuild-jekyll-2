@@ -6,6 +6,9 @@ fields:
   label: Title
   name: title
 - type: text
+  label: Page Link
+  name: permalink
+- type: text
   name: layout
   label: Layout
   hidden: true
@@ -17,21 +20,14 @@ fields:
   name: page_sections
   label: Page Sections
   template_types:
-  - navigation-header
-  - navigation-header-w-button
-  - simple-header
-  - hero-banner-w-image
   - content-feature
-  - detail-content
-  - 1-column-text
-  - 2-column-text
-  - 3-column-text
-  - full-width-media-element
-  - 2-column-media-element
-  - signup-bar
-  - simple-footer
-  - 4-column-footer
+  - block-teaser
+  - block-product
+  - block-go-head
+  - block-about
+  - block-by
+  - block-teaser2
+  - block-video
 pages:
-- about-me2.md
 - index.md
-- testss.md
+- _pages/get-started.md

@@ -1,0 +1,46 @@
+---
+label: block-product
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: block-product
+- type: select
+  label: block
+  name: row
+  config:
+    source:
+      type: text
+    options:
+    - normal
+    - revers
+- type: text
+  label: BG color
+  name: bg-color
+- type: text
+  label: Text color
+  name: text-color
+- type: file
+  label: Image
+  name: img
+- type: text
+  label: Title
+  name: title
+- type: text
+  label: Paragraph
+  name: paragraph
+- type: field_group_list
+  name: column
+  label: Column
+  fields:
+  - type: text
+    label: Title
+    name: title
+  - type: text
+    label: Text
+    name: text
+  - type: file
+    label: Image
+    name: img

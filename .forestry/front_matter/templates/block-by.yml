@@ -1,0 +1,22 @@
+---
+label: block-by
+hide_body: false
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: block-by
+- type: text
+  label: By Title
+  name: by-title
+- type: field_group_list
+  name: by-list
+  label: By List IMG
+  fields:
+  - type: file
+    label: Image
+    name: img
+  - type: text
+    label: Url
+    name: url
