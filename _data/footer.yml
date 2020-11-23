@@ -1,0 +1,6 @@
+ 
+logo-art: "/assets/img/logo_art.svg"
+
+nav:
+- list: ["Home","/"] 
+- list: ["Maps","/maps"] 

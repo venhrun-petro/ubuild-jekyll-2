@@ -1,0 +1,7 @@
+logo: "assets/img/logo.png"
+butoon-href: "/get-started/"
+ 
+
+#  working_dir: "/srv"
+# instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+#   -d _site

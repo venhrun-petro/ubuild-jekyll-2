@@ -1,2 +1,37 @@
-  </body>
-</html>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer_cont">
+            <div class="footer_cont_left">
+                <a class="footer_logo">
+                    WIND <span>Stay connected offline.</span>
+                </a>
+                <ul class="footer_dropdawn">
+                    <li><a>English</a>
+                        <ul>
+                            <li><a>Spanish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_cont_right">
+                <div class="footer_nav">
+                    {% for nav in site.data.footer.nav %}
+                    <a href="{{ nav.list[1] }}"> {{ nav.list[0] }}</a>
+                    {% endfor %}
+                    <a href="{{ site.data.header.butoon-href }}">Get Started</a>
+                </div>
+                <div class="footer_info">
+                    <p>Copyright 2020 Guardian Project  |</p> 
+                    <a href="privacy-policy">Privacy Policy</a>
+                    <img src="{{ site.url }}{{ site.data.footer. logo-art }}" alt="logo_art" />
+                </div>
+            </div>
+        </div> 
+    </div>
+</footer>   
+
+{% include javascript.html %} 
+
+
+ 
+ 

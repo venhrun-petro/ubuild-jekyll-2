@@ -1,0 +1,25 @@
+<section class="go-head {% if section.go-head-bg == "white" %} white {% endif %}">
+    <div class="container-small">
+      <h4>{{ section.go-head-title }}</h4>
+      <h2>{{ section.go-head-sub-title }}</h2>
+      <div class="row">
+        <div class="go-head_cont">
+          {% for list in section.go-head-list %}
+            <div class="go-head_cont_item">
+              {% if list.img-group %}
+                <div class="go-head_cont_white"> 
+                  {% for items in list.img-group %}
+                    <img class="go-head_cont_img" src="{{ site.url}}{{ items.img }}" alt="go-head_cont">
+                  {% endfor %} 
+                </div>
+              {% endif %}
+              <div class="go-head_bottom">
+                <h5>{{ list.title }}</h5>
+                <p class="general-paragraph">{{ list.text }}</p> 
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>  
+</section>

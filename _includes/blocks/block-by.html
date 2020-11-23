@@ -1,0 +1,12 @@
+<section class="by">
+    <div class="container-small"> 
+      <div class="by_cont"> 
+        <h4>{{ section.by-title }}</h4> 
+        <div class="by_cont_list">
+          {% for list in section.by-list %}
+            <a class="by_cont_partners" href="{{ list.url }}"><img src="{{ site.url }}{{ list.img }}" alt="by"></a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>  
+</section>

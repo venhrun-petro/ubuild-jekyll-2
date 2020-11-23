@@ -1,0 +1,277 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  position: relative; 
+  background-color: $background-black;
+  overflow: hidden;
+  z-index: 4; 
+  padding: 140px 0 140px;
+  @include sm {
+    padding: 20px 0 25px;
+  }
+  &_cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &_left{
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0 0;
+      position: relative;
+      @include sm {
+        width: 100%;
+      }
+    }
+    &_right{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 0 0;
+      box-sizing: border-box;
+      padding-right: 10px;
+      @include sm {
+        width: 100%;
+        padding-right: 00px; 
+      }
+    }
+  }
+  &_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-white;
+    transition: 0.3s all;
+    @include sm {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px; 
+      letter-spacing: 0.02em;
+    }
+    span{
+      font-family: $font-karla;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 24px; 
+      letter-spacing: 0.02em; 
+      color: $color-white;
+      text-transform: none;
+      padding-left: 65px;
+      position: relative;
+      transition: 0.3s all;
+      @include sm {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px; 
+        letter-spacing: 0.02em;
+        padding-left: 12px;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        left: 40px;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: $background-white;
+        transition: 0.3s all;
+        @include sm {
+          left: 6px;
+        }
+      }
+    }
+    &:hover, &:hover > *{
+      color: $color-blue;
+      cursor: pointer;
+      &:before{ 
+        background-color: $color-blue;
+      }
+    }
+  }
+  &_dropdawn{
+    margin: 30px 0 0 125px;
+    font-family: $font-karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 24px; 
+    color: $color-white;
+    padding: 0;
+    width: max-content;
+    li{
+      list-style: none;
+      position: relative;
+      z-index: 9;
+      &:after{
+        content: '';
+        position: absolute;
+        z-index: 7;
+        left: 0;
+        top: 50%;
+        width: 17px;
+        height: 17px;
+        background: url('../img/plan.svg');
+        background-position: center;
+        background-size: contain;
+        transform: translate(0, -50%);
+      }
+      &:before{
+         content: '';
+        position: absolute;
+        z-index: 7;
+        right: 0;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        background: url('../img/footer-arrow.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate(0, -50%);
+      }
+      a{
+        text-decoration: none;
+        font-family: $font-karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 24px; 
+        color: $color-white;
+        display: inline-block;
+        padding: 0 20px 0 30px;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 9;
+        &:hover{
+          cursor: pointer; 
+        }
+      }
+      ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: $background-white;
+        padding: 10px 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        li{
+          &:before, &:after{
+            display: none;
+          }
+          a{
+            padding: 0 0;
+            color: $color-black;
+          }
+        }
+      }
+      &:hover{
+        & > ul{
+          display: block;
+        }
+      }
+    }
+    @include sm {
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+    }
+  }
+  &_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 0 30px;
+    @include sm {
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 100px;
+      margin: 0 0 50px;
+    }
+    a{
+      font-family: $font-karla;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px; 
+      color: $color-white;
+      margin-right: 60px;
+      text-decoration: none;
+      transition: 0.3s all;
+      @include sm {
+        margin-right: 0;
+        margin-bottom: 7px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &:hover, &:hover > *{
+        color: $color-blue; 
+        cursor: pointer;
+      }
+      &:last-child{
+        margin-right: 0;
+        @include sm {
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+  }
+  &_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    @include sm {
+      justify-content: center;
+    }
+    p, a{
+      font-family: $font-karla;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 19px;
+      line-height:24px; 
+      text-align: right; 
+      color: rgba(255, 255, 255, 0.7);
+      @include sm {
+        font-size: 10px;
+        line-height: 120%;
+      }
+    }
+    a{
+      transition: 0.3s all;
+      text-decoration: none;
+      padding-left: 5px;
+      &:hover, &:hover > *{
+        color: $color-blue; 
+        cursor: pointer;
+      }
+    }
+    img{
+      width: 25px;
+      height: auto;
+      object-fit: contain;
+      margin-left: 30px;
+      @include sm {
+        width: 18px;
+        height: 18px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+ 
+ <section class="product {% if section.row == "revers" %} revers {% endif %}"
+  {% if section.bg-color %} style="background-color: {{ section.bg-color }};"{% endif %}
+  >
+      <div class="container-small">
+        <div class="row">
+          <div class="product_cont">
+              <div class="product_img"> 
+                  <img  src="{{ site.url }}{{ section.img }}" alt="product-img" >
+              </div>
+              <div class="product_content">
+                  <h2 
+                  {% if section.text-color %} style="color: {{ section.text-color }};"{% endif %}
+                  >{{ section.title }}</h2>
+                  <p class="general-paragraph "
+                  {% if section.text-color %} style="color: {{ section.text-color }};"{% endif %}
+                  >{{ section.paragraph }}</p>
+                  <div class="product_column">
+                    {% for column in section.column %}
+                    <div class="product_column_items">
+                        <img  src="{{ site.url }}{{ colomn.img }}" alt="product-img" >
+                        <div class="product_column_info">
+                            <h5
+                            {% if section.text-color %} style="color: {{ section.text-color }};"{% endif %}
+                            >{{ column.title }}</h5>
+                            <p class="general-paragraph "
+                            {% if section.text-color %} style="color: {{ section.text-color }};"{% endif %}
+                            >{{ column.text }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+              </div> 
+            </div>
+        </div> 
+      </div>
+  </section>
