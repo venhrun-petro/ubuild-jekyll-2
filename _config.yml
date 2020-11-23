@@ -10,7 +10,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default" # this ensures all content renders with layouts/default.html
-      
+
 relative_permalinks: false
 permalink: /:title/
  
@@ -20,3 +20,20 @@ plugins:
   - jekyll-menus
 
 include: ["_pages"]
+
+
+exclude:
+  - node_modules
+  - gulpfile.js
+  - package.json 
+  - package-lock.json
+  - yarn.lock
+  - sass-cache
+  - jekyll-cache
+  - jekyll-metadata
+  - .vscode   
+  - Gemfile
+  - README.md
+  - .forestry
+  - _config_development.yml
+  - _config_staging.yml
