@@ -8,9 +8,7 @@ url: ""
 relative_permalinks: false
 permalink: /:title/
  
-sass:
-    sass_dir: _sass
-    style: compressed
+ 
 
 plugins:
   - jekyll-sitemap
@@ -29,8 +27,7 @@ exclude:
   - jekyll-cache
   - jekyll-metadata
   - .vscode   
-  - Gemfile
-  - README.md
+  - Gemfile 
   - .forestry
   - _config_development.yml
   - _config_staging.yml
