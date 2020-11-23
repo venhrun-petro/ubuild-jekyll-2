@@ -33,7 +33,6 @@ exclude:
   - jekyll-metadata
   - .vscode   
   - Gemfile
-  - README.md
-  - .forestry
+  - README.md 
   - _config_development.yml
   - _config_staging.yml
