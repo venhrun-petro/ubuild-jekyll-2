@@ -266,6 +266,7 @@ DEPENDENCIES
   jekyll-sitemap
   kramdown-parser-gfm
   scss_lint
+  tzinfo-data
 
 BUNDLED WITH
    2.1.4

@@ -22,5 +22,4 @@ plugins:
 include: ["_pages"]
 
 
-exclude: 
-  - gulpfile.js 
+ 
