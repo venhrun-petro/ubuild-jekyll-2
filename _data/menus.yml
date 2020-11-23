@@ -1,0 +1,10 @@
+---
+main:
+  - identifier: Maps
+    url: "/maps"
+    weight: 1
+    title: Home
+  - identifier: About
+    url: "/about"
+    weight: 2
+    title: About
