@@ -29,8 +29,7 @@ exclude:
   - package-lock.json
   - yarn.lock
   - sass-cache
-  - jekyll-cache
-  - jekyll-metadata
+  - jekyll-cache 
   - .vscode   
   - Gemfile
   - README.md 
