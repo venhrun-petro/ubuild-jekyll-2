@@ -32,6 +32,4 @@ exclude:
   - jekyll-cache 
   - .vscode   
   - Gemfile
-  - README.md 
-  - _config_development.yml
-  - _config_staging.yml
+  - README.md  
