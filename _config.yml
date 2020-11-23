@@ -22,12 +22,4 @@ plugins:
 include: ["_pages"]
 
 
-exclude:
-  - node_modules
-  - gulpfile.js
-  - package.json 
-  - package-lock.json
-  - yarn.lock
-  - sass-cache 
-  - .vscode   
-  - README.md  
+ 
